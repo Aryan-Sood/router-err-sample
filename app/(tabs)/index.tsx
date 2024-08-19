@@ -26,7 +26,7 @@ export default function HomeScreen() {
             },
           }}
         >
-          <ThemedText type="title">Machine 1</ThemedText>
+          <ThemedText type="link">Machine 1</ThemedText>
         </Link>
       </ThemedView>
     </ParallaxScrollView>

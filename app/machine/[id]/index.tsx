@@ -18,16 +18,20 @@ export default function MachineScreen() {
       }
     >
       <ThemedView style={styles.stepContainer}>
-        <Link
-          href={{
-            pathname: "/machine/[id]",
-            params: {
-              id: 1,
-            },
-          }}
-        >
-          <ThemedText type="title">Machine 1</ThemedText>
-        </Link>
+        <ThemedText type="title">Machine 1 page</ThemedText>
+
+        <ThemedView>
+          <Link
+            href={{
+              pathname: "/machine/[id]/about",
+              params: {
+                id: 1,
+              },
+            }}
+          >
+            <ThemedText type="link">About</ThemedText>
+          </Link>
+        </ThemedView>
       </ThemedView>
     </ParallaxScrollView>
   );
